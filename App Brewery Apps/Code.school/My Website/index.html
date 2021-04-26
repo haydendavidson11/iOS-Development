@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<h1>Hello World!</h1>
+	<h2>This is my Table</h2>
+	
+	<!-- Table layout -->
+	<table>
+		<tr>
+			<th></th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Ocupation</th>
+		</tr>
+		<tr>
+			<td><img src="images/hayden.jpg"></td>
+			<td>Hayden</td>
+			<td>Hayden@me.com</td>
+			<td>
+				<a href="#">Programmer</a>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="images/susan.jpg"></td>
+			<td>Susan</td>
+			<td>Susan@me.com</td>
+			<td>
+				<a href="#">DDS</a>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="images/amelia.jpg"></td>
+			<td>Amelia</td>
+			<td>Amelia@me.com</td>
+			<td>
+				<a href="#">Student</a>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="images/rhett.jpg"></td>
+			<td>Rhett</td>
+			<td>Rhett@me.com</td>
+			<td>
+				<a href="#">Child</a>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+
+		<h1>My Form</h1>
+
+	<!-- form action is where the submition goes, the method is whether you are sending or recieving information. "GET" for recieveing, or "POST" to send information -->
+
+	<form action="http://woodandwares.com" method="GET">
+
+		  	<label for="username">Username</label>
+		  <input id="username" type="email" name="email" placeholder="Email" required>
+		  	<label for="password">Password</label>
+		  <input id="password" type="password" name="password" placeholder="Password" required>
+		  <br>
+		  <label for=" color">Color</label>
+		  	<input id="color" type="color" name="color">
+		  <br>
+		  <label for="date">Date</label>
+		  	<input id="date" type="date" name="date">
+		  <br>
+		  <label for="text">Messege</label>
+		  	<textarea id="text" name="messege"></textarea>
+		  <br>
+		  	<input type="radio" name="radio">
+		  <label for="submit">Submit</label>
+		  	<input id="submit" type="submit" name="submit">
+
+
+	</form>
+
+<p> Do your prefer Cats or Dogs??</p>
+
+<!-- the name attribute has to be different for radio type if multiple choice. if the "name" is the same then you can only pick one value. if the "name" is different then you can pick multiple options -->
+
+	<form>
+		<label for="dogs">Dogs</label>
+			<input id="dogs" type="radio" name="petChoice" value="DOGS">
+		<label for="cats">Cats</label>
+			<input id="cats" type="radio" name="petChoice" value="CATS">
+
+	<p>Whats Your current mood?</p>
+
+		<select name="mood">
+			<option value="happy">:)</option>
+			<option value="content">:|</option>
+			<option value="sad">:(</option>
+		</select>
+
+		<br>
+
+		<button>GO!</button>
+
+	</form>
+
+	<div>
+		<h1>Register</h1>
+	
+		<form>
+			<label for="firstName">First Name:</label>
+				<input id="firstName" type="text" name="firstName" placeholder="First Name" required>
+			<label for="lastName">Last Name:</label>
+				<input id="lastName" type="text" name="lastName" placeholder="Last Name" required="">
+				<br>
+			<label for="male">Male</label>
+				<input id="male" type="radio" name="gender">
+			<label for="female">Female</label>
+				<input id="female" type="radio" name="gender">
+			<label for="other">Other</label>
+				<input id="other" type="radio" name="gender">
+				<br>
+			<label for="email">Email:</label>
+				<input id="email" type="email" name="email" placeholder="Email" required>
+			<label for="password">Password:</label>
+				<input id="password" type="password" name="password" minlength="5" maxlength="10" placeholder="Password" required>
+				<br>
+			<label for="birthday">Birthday:</label>
+				<select name="month">
+					<option>Month</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>Mar</option>
+					<option>Apr</option>
+					<option>May</option>
+					<option>Jun</option>
+					<option>Jul</option>
+					<option>Aug</option>
+					<option>Sep</option>
+					<option>Oct</option>
+					<option>Nov</option>
+					<option>Dec</option>
+				</select>
+
+				<select name="day">
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+
+				<select name="Year">
+					<option>Year</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option>1994</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+				</select>
+
+			<br>
+
+			<label>I agree to the terms and conditions</label>
+				<input type="checkbox" name="consent" required>
+
+			<br>
+
+			<input type="submit" name="Submit">
+
+			
+
+		</form>
+	</div>
+
+</body>
+<footer>
+
+</footer>
+</html>
